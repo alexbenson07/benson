@@ -1,0 +1,176 @@
+//Import SCSS Files
+@import "scss/_variables.scss";
+@import "scss/_mixins.scss";
+@import "scss/_icons.scss";
+@import "scss/_placeholder.scss";
+@import "scss/_components.scss";
+@import "scss/_images.scss";
+
+
+//Overwrites
+body{
+  color: $black;
+  margin-bottom: 100px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+
+  .container {
+    width: 90%;
+  }
+}
+
+h2 {
+  &.subhead {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  text-transform: uppercase;
+  }
+}
+
+.centerer {
+  @extend %centerer;
+
+  &.project-title {
+    text-align: center;
+    color: white;
+  }
+}
+
+.hero {
+  @include wh(100%, 100vh);
+//  @include cover('https://sqch7a.bn1.livefilestore.com/y2mQhke0z4fwS4BxUZt4w_OoDdcabx4BYzyuFREy9bR4xTf5NwThEAY90CZZ4cuo58gycqIcuPcjA9ERhA0WFt240pkNZz0eCOgWB4KjNs0AwXadZtbt0KkNhlASknEZdWZ/left.jpg?psid=1');
+  @include cover('http://media.giphy.com/media/my69AoP0xnY88/giphy.gif');
+  @include cover ('http://media.giphy.com/media/HL3yaaeTJMPdu/giphy.gif');
+
+  .logo{
+//    @include wh(500px, 500px);
+//    background-color: $black;
+    @extend %centerer;
+    position: absolute;
+//    @include cover('../img/letterhead.png');
+  }
+
+    &:before {
+      content: '';
+
+      @include absPosition(0, auto, auto, 0);
+
+      height: 100%;
+      width: 100%;
+
+      @include bc(rgba(0, 0, 0, 0.3));
+  }
+}
+
+
+.section {
+  padding: 20px;
+  display: block;
+  min-height: 200px;
+
+  &.mission {
+    .statement {
+      color: $lightgrey;
+      font-weight: 200;
+      text-align: center;
+      strong {
+        color: $gold;
+      }
+    }
+  }
+  //  Dark Section
+  &.dark {
+    background-color: $black;
+    height: 350px;
+    @extend %full-width;
+    padding-left: 10%;
+
+   .project-title {
+     color: $gold;
+     font-weight: 200;
+   }
+  }
+  &.light {
+//    background-color: $lightgrey;
+    color: $black;
+    height: 350px;
+
+    &.project-title {
+      color: $gold;
+      font-weight: 200;
+    }
+  }
+
+  &.fancy {
+    @extend %full-width;
+    height: 400px;
+//    @extend %centerer;
+
+    .project-title {
+      color: $gold;
+      font-weight: 200;
+      text-align: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+      &::before {
+
+      }
+      &::after {
+        background-color: blue;
+      }
+    }
+
+
+  }
+}
+
+.project {
+  -webkit-filter: saturate(.5);
+  filter: saturate(0);
+  border: 1px solid white;
+  &:before {
+    content: '';
+
+    @include absPosition(0, auto, auto, 0);
+
+    height: 100%;
+    width: 100%;
+
+    @include bc(rgba(0, 0, 0, 0.5));
+
+    transition: 0.2s ease;
+  }
+
+  &:hover {
+    -webkit-filter: saturate(1);
+    filter: saturate(1);
+    cursor: pointer;
+    &:before {
+      opacity: .5;
+
+      transition: 0.2s ease;
+    }
+  }
+}
+
+
+.logomark {
+  width: 120px;
+  @include absPosition(20px, 20px, auto, auto);
+}
+
+.lettermark {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.project-name {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.logo {
+  height: 200px;
+  margin-bottom: 50px;
+}

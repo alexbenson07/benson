@@ -1,0 +1,30 @@
+.project {
+
+  //Midwestern Originals
+  &.midwest {
+    @include cover("../img/midwest-logo.png");
+  }
+
+  //Lost Paradise
+  &.lost-paradise {
+    @include cover('../img/lost-paradise.png');
+  }
+
+  //Wanderlust Spread
+  &.wanderlust {
+    @include cover('../img/wanderlust.png');
+  }
+
+  &.briefcase {
+    @include cover('../img/briefcase.png');
+  }
+
+  &.cnn {
+    @include cover('../img/cnn.png');
+  }
+
+  &.poster {
+    @include cover('../img/poster.png');
+  }
+
+}
