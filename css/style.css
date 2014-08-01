@@ -682,7 +682,7 @@ button.ghost {
   text-align: center;
   position: relative;
   top: 50%;
-  height: 60%;
+  height: 80%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
@@ -693,11 +693,13 @@ button.ghost {
   display: inline-block;
   height: 100%;
   position: relative; }
+  .overlay ul :nth-last-child(2) {
+    margin-bottom: 20px; }
 
 .overlay ul li {
   display: block;
   height: 20%;
-  height: calc(50% / 6);
+  height: calc(50% / 7);
   min-height: 24px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
