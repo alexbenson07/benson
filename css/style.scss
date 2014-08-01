@@ -26,8 +26,9 @@ h2 {
   }
 }
 
-.centerer {
-  @extend %centerer;
+.center {
+//  @extend %centerer;
+  margin-top: 25%;
 
   &.project-title {
     text-align: center;
@@ -129,6 +130,11 @@ h2 {
   -webkit-filter: saturate(.5);
   filter: saturate(0);
   border: 1px solid white;
+
+//  &.large {
+//    @include maintain-ratio(16 9);
+//  }
+
   &:before {
     content: '';
 
@@ -173,4 +179,9 @@ h2 {
 .logo {
   height: 200px;
   margin-bottom: 50px;
+}
+
+.wordmark {
+  margin: 0 auto 20px auto;
+  @include wh(106px, 36px);
 }

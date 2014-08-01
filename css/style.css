@@ -617,7 +617,7 @@
   margin-left: -10%;
   width: 120%; }
 
-.centerer, .hero .logo {
+.hero .logo {
   margin-top: 25%;
   margin-left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -806,9 +806,11 @@ h2.subhead {
   text-align: center;
   text-transform: uppercase; }
 
-.centerer.project-title {
-  text-align: center;
-  color: white; }
+.center {
+  margin-top: 25%; }
+  .center.project-title {
+    text-align: center;
+    color: white; }
 
 .hero {
   width: 100%;
@@ -912,3 +914,8 @@ h2.subhead {
 .logo {
   height: 200px;
   margin-bottom: 50px; }
+
+.wordmark {
+  margin: 0 auto 20px auto;
+  width: 106px;
+  height: 36px; }
