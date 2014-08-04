@@ -829,7 +829,7 @@ h2.subhead {
   background-size: cover; }
   .hero .logo {
     position: absolute; }
-  .hero:before {
+  .hero:after {
     content: '';
     position: absolute;
     top: 0;
@@ -921,3 +921,9 @@ h2.subhead {
   margin: 0 auto 20px auto;
   width: 106px;
   height: 36px; }
+
+#trigger-overlay {
+  position: fixed;
+  font-size: 24px;
+  margin: 10px 10px auto auto;
+  color: #e1c758; }

@@ -50,7 +50,7 @@ h2 {
 //    @include cover('../img/letterhead.png');
   }
 
-    &:before {
+    &:after {
       content: '';
 
       @include absPosition(0, auto, auto, 0);
@@ -184,4 +184,11 @@ h2 {
 .wordmark {
   margin: 0 auto 20px auto;
   @include wh(106px, 36px);
+}
+
+#trigger-overlay{
+  position: fixed;
+  font-size: 24px;
+  margin: 10px 10px auto auto;
+  color: $gold;
 }
