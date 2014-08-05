@@ -796,6 +796,9 @@ button.ghost {
   -o-background-size: cover;
   background-size: cover; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   color: #333333;
   margin-bottom: 100px;
@@ -832,10 +835,15 @@ h2.subhead {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
+  background: url("../img/field.min.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   .hero .logo {
     position: absolute; }
-  .hero:after {
+  .hero:before {
     content: '';
     position: absolute;
     top: 0;
@@ -844,7 +852,14 @@ h2.subhead {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.75); }
+
+.about {
+  background: url("../img/canoe.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .section {
   padding: 20px;
@@ -933,3 +948,17 @@ h2.subhead {
   font-size: 24px;
   margin: 10px 10px auto auto;
   color: #e1c758; }
+
+.tagline {
+  color: white;
+  text-align: center; }
+  .tagline h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Josefin Slab'; }
+
+span.highlight {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin-bottom: 10px; }
