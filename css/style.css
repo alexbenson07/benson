@@ -613,7 +613,7 @@
   content: '\e88f'; }
 
 /* '' */
-.section.dark, .section.fancy {
+.section.fancy {
   margin-left: -10%;
   width: 120%; }
 
@@ -831,6 +831,10 @@ body {
   color: #333333;
   margin-bottom: 100px;
   font-family: 'Raleway', Helvetica, sans-serif; }
+  body.red {
+    background-color: #7f8c8d; }
+    body.red .container {
+      text-align: center; }
   body .container {
     width: 90%; }
 
@@ -901,13 +905,6 @@ h2.subhead {
     text-align: center; }
     .section.mission .statement strong {
       color: #e1c758; }
-  .section.dark {
-    background-color: #333333;
-    height: 350px;
-    padding-left: 10%; }
-    .section.dark .project-title {
-      color: #e1c758;
-      font-weight: 200; }
   .section.light {
     color: #333333;
     height: 350px; }
@@ -1023,9 +1020,17 @@ span.highlight {
   font-family: 'Josefin Slab'; }
 
 section.section {
-  height: 300px; }
+  height: 300px;
+  margin-top: 50px; }
+  section.section .text-center {
+    position: relative; }
   section.section.dark {
-    color: white; }
+    color: white;
+    background: url("../img/canoe.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
     section.section.dark:before {
       content: '';
       position: absolute;
@@ -1035,4 +1040,19 @@ section.section {
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.3); }
+      background-color: rgba(0, 0, 0, 0.7); }
+
+button.button {
+  width: auto;
+  height: 50px;
+  background-color: #c0392b;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  -webkit-box-shadow: 0px 3px 0px 0px #e74c3c;
+  -moz-box-shadow: 0px 3px 0px 0px #e74c3c;
+  box-shadow: 0px 3px 0px 0px #e74c3c; }
+  button.button:active {
+    box-shadow: rgba(231, 76, 60, 0); }
+  button.button:focus {
+    border: none; }

@@ -21,6 +21,14 @@ body{
   margin-bottom: 100px;
   font-family: 'Raleway', Helvetica, sans-serif;
 
+  &.red {
+    background-color: #7f8c8d;
+
+    .container{
+      text-align: center;
+    }
+  }
+
   .container {
     width: 90%;
   }
@@ -97,18 +105,19 @@ h2 {
       }
     }
   }
-  //  Dark Section
-  &.dark {
-    background-color: $black;
-    height: 350px;
-    @extend %full-width;
-    padding-left: 10%;
+//  //  Dark Section
+//  &.dark {
+//    background-color: $black;
+//    height: 350px;
+//    @extend %full-width;
+////    padding-left: 10%;
+//
+//   .project-title {
+//     color: $gold;
+//     font-weight: 200;
+//   }
+//  }
 
-   .project-title {
-     color: $gold;
-     font-weight: 200;
-   }
-  }
   &.light {
 //    background-color: $lightgrey;
     color: $black;
@@ -280,9 +289,15 @@ span {
 section {
   &.section{
     height: 300px;
+    margin-top: 50px;
+
+    .text-center {
+      position: relative;
+    }
 
   &.dark {
     color: white;
+    @include cover('../img/canoe.png');
 
     &:before {
       content: '';
@@ -292,8 +307,31 @@ section {
       height: 100%;
       width: 100%;
 
-      @include bc(rgba(0, 0, 0, 0.3));
+      @include bc(rgba(0, 0, 0, 0.7));
     }
   }
+  }
+}
+
+
+//Idesignbecause
+
+button {
+  &.button {
+    @include wh(auto, 50px);
+    background-color: #c0392b;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(231, 76, 60,1.0);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(231, 76, 60,1.0);
+    box-shadow: 0px 3px 0px 0px rgba(231, 76, 60,1.0);
+
+    &:active {
+      box-shadow: rgba(231, 76, 60,0);
+    }
+    &:focus {
+       border: none;
+    }
   }
 }
