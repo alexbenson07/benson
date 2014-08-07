@@ -834,7 +834,10 @@ body {
   body.red {
     background-color: #7f8c8d; }
     body.red .container {
-      text-align: center; }
+      text-align: center;
+      margin-top: 20%; }
+      body.red .container h1 {
+        margin-bottom: 40px; }
   body .container {
     width: 90%; }
 
@@ -998,6 +1001,19 @@ span.highlight {
   padding: 5px;
   margin-bottom: 10px; }
 
+.hero .hero-text {
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 25%; }
+  .hero .hero-text h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .1em; }
+  .hero .hero-text h4 {
+    text-transform: lowercase;
+    font-family: 'Josefin Slab'; }
+
 .services {
   margin-top: 65vh;
   display: flex;
@@ -1013,18 +1029,13 @@ span.highlight {
   font-family: 'Josefin Slab'; }
 
 section.section {
-  height: 300px;
+  height: 270px;
   margin-top: 50px; }
   section.section .text-center {
     position: relative; }
-  section.section.dark {
-    color: white;
-    background: url("../img/canoe.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    section.section.dark:before {
+  section.section.dribbble {
+    margin-top: 0 !important; }
+    section.section.dribbble:before {
       content: '';
       position: absolute;
       top: 0;
@@ -1033,14 +1044,35 @@ section.section {
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.7); }
-
-.results {
+      background-color: #ea4c89; }
+    section.section.dribbble.dark {
+      color: white;
+      background: url("../img/canoe.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      section.section.dribbble.dark:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7); }
+section .results {
   width: 50%;
   height: 200px;
   margin: 0 auto; }
-
-button.button {
+section button.dribbble {
+  border: 1px solid white;
+  color: white; }
+  section button.dribbble:hover {
+    background-color: white;
+    color: #ea4c89; }
+section button.button {
   width: auto;
   height: 50px;
   background-color: #c0392b;
@@ -1050,7 +1082,9 @@ button.button {
   -webkit-box-shadow: 0px 3px 0px 0px #e74c3c;
   -moz-box-shadow: 0px 3px 0px 0px #e74c3c;
   box-shadow: 0px 3px 0px 0px #e74c3c; }
-  button.button:active {
+  section button.button:hover {
+    background-color: #962d22; }
+  section button.button:active {
     box-shadow: rgba(231, 76, 60, 0); }
-  button.button:focus {
+  section button.button:focus {
     border: none; }

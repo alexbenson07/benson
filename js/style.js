@@ -14,7 +14,7 @@ $( document ).ready(function() {
 //    });
 
     var reasons = {
-        list: ['It\'s Responsive', 'There\'s too much bad design out there', 'It\'s a challenge', 'I get to take an idea and make it a tangible product', 'Get to collaborate with people with different perspectives'],
+        list: ['It\'s Responsive', 'There\'s too much bad design out there', 'It\'s a challenge', 'I get to take an idea and make it a tangible product', 'Get to collaborate with people with different perspectives', 'I learn something new everyday'],
         counter: 0,
         _get: function(is_rand) {
             if (is_rand) {
