@@ -315,6 +315,11 @@ section {
 
 
 //Idesignbecause
+.results {
+  @include wh(50%, 100px);
+  margin: 0 auto;
+}
+
 
 button {
   &.button {

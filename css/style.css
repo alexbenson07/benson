@@ -1042,6 +1042,11 @@ section.section {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.7); }
 
+.results {
+  width: 50%;
+  height: 100px;
+  margin: 0 auto; }
+
 button.button {
   width: auto;
   height: 50px;
