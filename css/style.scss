@@ -302,7 +302,7 @@ section {
 
     &.dribbble {
       margin-top: 0!important;
-      
+
       &:before {
         content: '';
 
@@ -339,37 +339,40 @@ section {
     margin: 0 auto;
   }
 
-  button {
-    &.dribbble {
-      border: 1px solid white;
-      color: white;
-      &:hover{
-        background-color: white;
-        color: #ea4c89;
-      }
 
+}
+
+
+button {
+  &.dribbble {
+    border: 1px solid white;
+    color: white;
+    &:hover{
+      background-color: white;
+      color: #ea4c89;
     }
 
-    &.button {
-      @include wh(auto, 50px);
-      background-color: #c0392b;
-      color: white;
-      padding: 5px 20px;
+  }
+
+  &.button {
+    @include wh(auto, 50px);
+    background-color: #c0392b;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(231, 76, 60, 1.0);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(231, 76, 60, 1.0);
+    box-shadow: 0px 3px 0px 0px rgba(231, 76, 60, 1.0);
+
+    &:hover {
+      background-color: darken(#c0392b, 10%);
+    }
+
+    &:active {
+      box-shadow: rgba(231, 76, 60, 0);
+    }
+    &:focus {
       border: none;
-      -webkit-box-shadow: 0px 3px 0px 0px rgba(231, 76, 60, 1.0);
-      -moz-box-shadow: 0px 3px 0px 0px rgba(231, 76, 60, 1.0);
-      box-shadow: 0px 3px 0px 0px rgba(231, 76, 60, 1.0);
-
-      &:hover {
-        background-color: darken(#c0392b, 10%);
-      }
-
-      &:active {
-        box-shadow: rgba(231, 76, 60, 0);
-      }
-      &:focus {
-        border: none;
-      }
     }
   }
 }

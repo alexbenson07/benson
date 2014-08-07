@@ -1066,25 +1066,3 @@ section .results {
   width: 50%;
   height: 200px;
   margin: 0 auto; }
-section button.dribbble {
-  border: 1px solid white;
-  color: white; }
-  section button.dribbble:hover {
-    background-color: white;
-    color: #ea4c89; }
-section button.button {
-  width: auto;
-  height: 50px;
-  background-color: #c0392b;
-  color: white;
-  padding: 5px 20px;
-  border: none;
-  -webkit-box-shadow: 0px 3px 0px 0px #e74c3c;
-  -moz-box-shadow: 0px 3px 0px 0px #e74c3c;
-  box-shadow: 0px 3px 0px 0px #e74c3c; }
-  section button.button:hover {
-    background-color: #962d22; }
-  section button.button:active {
-    box-shadow: rgba(231, 76, 60, 0); }
-  section button.button:focus {
-    border: none; }
