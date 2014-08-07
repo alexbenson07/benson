@@ -105,18 +105,18 @@ h2 {
       }
     }
   }
-//  //  Dark Section
-//  &.dark {
-//    background-color: $black;
-//    height: 350px;
-//    @extend %full-width;
-////    padding-left: 10%;
-//
-//   .project-title {
-//     color: $gold;
-//     font-weight: 200;
-//   }
-//  }
+  //  Dark Section
+  &.dark {
+    background-color: $black;
+    height: 350px;
+    @extend %full-width;
+//    padding-left: 10%;
+
+   .project-title {
+     color: $gold;
+     font-weight: 200;
+   }
+  }
 
   &.light {
 //    background-color: $lightgrey;
@@ -247,24 +247,24 @@ span {
 
 // NEW STYLES
 
-.hero {
-  .hero-text{
-    color: white;
-
-    position: relative;
-    text-align: center;
-    margin-top: 25%;
-    h1 {
-      text-transform: uppercase;
-      font-weight: 100;
-      letter-spacing: .1em;
-    }
-    h4 {
-      text-transform: lowercase;
-      font-family: 'Josefin Slab';
-    }
-  }
-}
+//.hero {
+//  .hero-text{
+//    color: white;
+//
+//    position: relative;
+//    text-align: center;
+//    margin-top: 25%;
+//    h1 {
+//      text-transform: uppercase;
+//      font-weight: 100;
+//      letter-spacing: .1em;
+//    }
+//    h4 {
+//      text-transform: lowercase;
+//      font-family: 'Josefin Slab';
+//    }
+//  }
+//}
 
 .services {
   margin-top: 65vh;
@@ -316,7 +316,7 @@ section {
 
 //Idesignbecause
 .results {
-  @include wh(50%, 100px);
+  @include wh(50%, 200px);
   margin: 0 auto;
 }
 
