@@ -89,6 +89,10 @@ h2 {
 
       @include bc(rgba(0, 0, 0, 0.3));
   }
+
+  &+.container {
+    margin-top: 80vh;
+  }
 }
 
 .about {
@@ -113,7 +117,7 @@ h2 {
   //  Dark Section
   &.dark {
     background-color: $black;
-    height: 350px;
+//    height: 350px;
 //    padding-left: 10%;
 
    .project-title {
@@ -198,6 +202,8 @@ h2 {
 .logomark {
   width: 120px;
   @include absPosition(20px, 20px, auto, auto);
+  position: fixed;
+  z-index: 5;
 }
 
 .lettermark {
@@ -271,7 +277,7 @@ span {
 }
 
 .services {
-  margin-top: 80vh;
+
   margin-bottom: 50px;
   display: flex;
   flex-direction: row;
@@ -293,7 +299,7 @@ span {
 
 section {
   &.section {
-    height: 270px;
+//    height: 270px;
     margin-top: 50px;
 
     .text-center {

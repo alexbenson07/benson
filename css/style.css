@@ -784,37 +784,37 @@ button {
       background-color: #e1c758;
       color: black; }
 
-.project.midwest {
+.project.midwest, .hero.midwest {
   background: url("../img/midwest-logo.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-.project.lost-paradise {
+.project.lost-paradise, .hero.lost-paradise {
   background: url("../img/lost-paradise.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-.project.wanderlust {
+.project.wanderlust, .hero.wanderlust {
   background: url("../img/wanderlust.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-.project.briefcase {
+.project.briefcase, .hero.briefcase {
   background: url("../img/briefcase.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-.project.cnn {
+.project.cnn, .hero.cnn {
   background: url("../img/cnn.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-.project.poster {
+.project.poster, .hero.poster {
   background: url("../img/poster.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -890,6 +890,8 @@ h2.subhead {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3); }
+  .hero + .container {
+    margin-top: 80vh; }
 
 .about {
   background: url("../img/canoe.png") no-repeat center center;
@@ -909,8 +911,7 @@ h2.subhead {
     .section.mission .statement strong {
       color: #e1c758; }
   .section.dark {
-    background-color: #333333;
-    height: 350px; }
+    background-color: #333333; }
     .section.dark .project-title {
       color: #e1c758;
       font-weight: 200; }
@@ -962,7 +963,9 @@ h2.subhead {
   top: 20px;
   right: 20px;
   bottom: auto;
-  left: auto; }
+  left: auto;
+  position: fixed;
+  z-index: 5; }
 
 .lettermark {
   width: 100px;
@@ -1015,7 +1018,6 @@ span.highlight {
     font-family: 'Josefin Slab'; }
 
 .services {
-  margin-top: 80vh;
   margin-bottom: 50px;
   display: flex;
   flex-direction: row;
@@ -1030,7 +1032,6 @@ span.highlight {
   font-family: 'Josefin Slab'; }
 
 section.section {
-  height: 270px;
   margin-top: 50px; }
   section.section .text-center {
     position: relative; }
