@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     foundation: {
       js: ['js/foundation/foundation.js', 'js/foundation/foundation.*.js'],
-      scss: ['scss/foundation.scss','scss/settings.scss']
+      scss: ['scss/style.scss','scss/settings.scss']
 
     },
 
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
           sourceMap: true
         },
         files: {
-          'dist/assets/css/foundation.css': '<%= foundation.scss %>',
+          'dist/assets/css/foundation.css': '<%= style.scss %>',
           'dist/assets/css/normalize.css': 'scss/normalize.scss',
           'dist/docs/assets/css/docs.css': 'doc/assets/scss/docs.scss'
         }

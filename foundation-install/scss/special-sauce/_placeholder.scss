@@ -1,0 +1,162 @@
+%full-width {
+  margin-left: -10%;
+  width: 120%;
+}
+
+//-----------------------------------------------------------------------------------
+//Placeholders //Call with @extend, these just output lines of code with no arguments
+//-----------------------------------------------------------------------------------
+
+%allcaps { //Shortcut for all uppercase
+  text-transform: uppercase;
+}
+
+%nocaps { //Shortcut for no uppercase
+  text-transform: lowercase;
+}
+
+%capitalize { //Shortcut for capitalization
+  text-transform: capitalize;
+}
+
+// Placeholders for the different font sizes
+
+%twenty {
+  font-size: 20px;
+}
+
+%sixteen {
+  font-size: 16px;
+}
+
+%twelve {
+  font-size: 12px;
+}
+
+%fourteen {
+  font-size: 14px;
+}
+
+%twentyfour {
+  font-size: 24px;
+}
+
+%thirtytwo {
+  font-size: 32px;
+}
+
+%twentysix {
+  font-size: 26px;
+}
+
+%light {
+  font-weight: 200;
+}
+
+%regular {
+  font-weight: 400;
+}
+%bold {
+  font-weight: 600;
+}
+
+
+
+%relative { //Shortcut for relative positioning
+  position: relative;
+}
+
+%clearfix { //Cross Browser Clearfix
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%center-block { //Horizontally Center an element
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%text-truncate { //Truncate overflowed text with '...'
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+%textleft { //Text Align Center
+  text-align: left;
+}
+
+%textcenter { //Text Align Center
+  text-align: center;
+}
+
+%textright { //Text Align Center
+  text-align: right;
+}
+
+%topBottom0 {
+  @include topBottomMargin(0);
+}
+
+%marginLeft {
+  margin-left: 2.5%;
+}
+
+%marginRight {
+  margin-right: 2.5%;
+}
+
+%margin10 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+%hide-text { //Hides the text of an element
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+%trans {
+  @include prefix (transition, .3s ease);
+}
+
+%flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+%pointer {
+  cursor: pointer;
+}
+
+%tab {
+  color: $black;
+  @include bc(black(.2));
+  @include wh(50%, 50px);
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+%flexcenter {
+  @extend %flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+%centerer {
+  margin-top: 25%;
+  margin-left: 50%;
+  @include prefix(transform, translate(-50%, -50%));
+}
