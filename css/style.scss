@@ -100,9 +100,11 @@ h2 {
 }
 
 .section {
-  padding: 20px;
+  padding: 50px 0px;
   display: block;
   min-height: 200px;
+
+
 
   &.mission {
     .statement {
@@ -111,6 +113,7 @@ h2 {
       text-align: center;
       strong {
         color: $gold;
+
       }
     }
   }
@@ -350,6 +353,7 @@ section {
 
 
 button {
+  margin-top: 30px;
   &.dribbble {
     border: 1px solid white;
     color: white;
