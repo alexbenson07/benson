@@ -114,7 +114,6 @@ h2 {
   &.dark {
     background-color: $black;
     height: 350px;
-    @extend %full-width;
 //    padding-left: 10%;
 
    .project-title {
@@ -272,7 +271,8 @@ span {
 }
 
 .services {
-  margin-top: 65vh;
+  margin-top: 80vh;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;

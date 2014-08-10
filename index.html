@@ -23,65 +23,94 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-
-    <div class="hero col-md-12">
-        <i class="icon icon-menu" id="trigger-overlay"></i>
-        <img src="img/wreath.png" class="img-responsive col-xs-1 col-xs-offset-11 logomark" alt="single"/>
-        <div class="tagline col-sm-6 col-sm-offset-3">
-            <h2><span class="highlight">Code & Design</span></h2>
-            <h4><span class="highlight">Handcrafted in the Midwest since 1989</span></h4>
+    <!--Navbar-->
+    <i class="icon icon-menu" id="trigger-overlay"></i>
+    <img src="img/wreath.png" class="img-responsive col-xs-1 col-xs-offset-11 logomark" alt="single"/>
+    <!--Hero Image-->
+    <div class="hero parent">
+        <div class="hero-text child">
+            <h1>Code & Design</h1>
+            <h4>Handcrafted in the Midwest since 1989</h4>
+            <button class="white">view work</button>
         </div>
     </div>
+
+    <!--Container-->
     <div class="container">
-        <div class="section mission">
-            <h2 class="subhead">Our Mission</h2>
-            <h4 class="col-sm-10 col-sm-offset-1 statement">Our mission is to help build a better world by building a better web. Design can influence and educate people. </h4>
-            <img src="img/wreath.png" class="img-responsive wordmark alt="single"/>
-        </div>
-    </div>
-    <div class="col-sm-6 project large cnn" style="height: 300px;">
-        <div class="center project-title">
-            <h3 class="project-name">CNN Redesign</h3>
-            <p>View Project</p>
-            <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
-        </div>
-    </div>
-    <div class="col-sm-6 project large lost-paradise" style="height: 300px;">
-        <div class="center project-title">
-            <h3 class="project-name">Lost Paradise</h3>
-            <p>View Project</p>
-            <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
-        </div>
-    </div>
-    <div class="col-sm-4 project poster" style="height: 250px;">
-        <div class="center project-title">
-            <h3 class="project-name">Poster</h3>
-            <p>View Project</p>
-            <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
-        </div>
-    </div>
-    <div class="col-sm-4 project briefcase" style="height: 250px;">
-        <div class="center project-title">
-            <h3 class="project-name">Briefcase</h3>
-            <p>View Project</p>
-            <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
-        </div>
-    </div>
-    <div class="col-sm-4 project wanderlust" style="height: 250px;">
-        <div class="center project-title">
-            <h3 class="project-name">Wanderlust</h3>
-            <p>View Project</p>
-            <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
-        </div>
-    </div>
-    <div class="container about">
-        <div class="section mission col-sm-8">
-            <h2 class="subhead">About The Designer</h2>
-            <h4 class="col-sm-10 col-sm-offset-1 statement">Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod.</h4>
-            <img src="img/wreath.png" class="img-responsive wordmark alt="single"/>
-        </div>
-    </div>
+        <!--First Section-->
+        <section class="services">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+        </section>
 
+        <!--Featured Work-->
+        <section class="featured-work">
+            <h2 class="center">Featured Work</h2>
+            <a href="index.html">
+                <div class="col-sm-6 project cnn">
+                    <div class="center project-title">
+                        <h3 class="project-name">CNN</h3>
+                        <p>View Project</p>
+                        <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="col-sm-6 project lost-paradise">
+                    <div class="center project-title">
+                        <h3 class="project-name">Lost Paradise</h3>
+                        <p>View Project</p>
+                        <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="col-sm-6 project poster">
+                    <div class="center project-title">
+                        <h3 class="project-name">Posters</h3>
+                        <p>View Project</p>
+                        <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="col-sm-6 project wanderlust">
+                    <div class="center project-title">
+                        <h3 class="project-name">Wanderlust</h3>
+                        <p>View Project</p>
+                        <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </div> <!--end container-->
+    <!--Pro Bono-->
+    <section class="section pro-bono dark col-sm-12">
+        <div class="container"> <!--inner-container-->
+            <div class="text-center col-sm-8 col-sm-offset-2" style="color: white;">
+                <h2>Everbody Deserves Good Design</h2>
+                <h4 class="subhead">Not Everyone Can Afford It</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eaque harum hic incidunt laboriosam nihil nisi nobis officiis pariatur perspiciatis quas quod similique sunt tempore?</p>
+                <button class="gold">Submit Your Project Today</button>
+            </div>
+        </div>
+    </section>
+    <section class="section dribbble col-sm-12 parent">
+        <div class="container child"> <!--inner-container-->
+            <div class="text-center col-sm-8 col-sm-offset-2">
+                <h2 style="color: white">Operation Dribbble <span><i class="icon icon-dribbble"></i></span></h2>
+                <h4 class="subhead">Get me on Dribble!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eaque harum hic incidunt laboriosam nihil nisi nobis officiis pariatur perspiciatis quas quod similique sunt tempore?</p>
+                <button class="dribbble">Submit Your Project Today</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Menu Overlay-->
     <div class="overlay overlay-slidedown">
         <button type="button" class="overlay-close">Close</button>
         <nav>
@@ -92,14 +121,15 @@
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Archives</a></li>
                 <li><a href="#">Contact</a></li>
-                <span class="social">
-                    <a href="http://www.facebook.com/midwesternoriginals" target="_blank" class="icon icon-facebook"></a>
-                    <a href="http://www.twitter.com/alexbensonphoto" target="_blank" class="icon icon-twitter-bird"></a>
-                    <a href="https://www.behance.net/alexbenson07" target="_blank" class="icon icon-behance"></a>
-                </span>
+                    <span class="social">
+                        <a href="http://www.facebook.com/midwesternoriginals" target="_blank" class="icon icon-facebook"></a>
+                        <a href="http://www.twitter.com/alexbensonphoto" target="_blank" class="icon icon-twitter-bird"></a>
+                        <a href="https://www.behance.net/alexbenson07" target="_blank" class="icon icon-behance"></a>
+                    </span>
             </ul>
         </nav>
-    </div>
+    </div
+
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/scripts.js"></script>

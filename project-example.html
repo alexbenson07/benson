@@ -24,38 +24,13 @@
 </head>
 <body>
    <!--Navbar-->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Work</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Pro Bono</a></li>
-                </ul>
-                <!--<img src="img/midwest_logo-dark.png" alt="MWO" class="img-responsive"/>-->
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="disabled">have a project?</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+   <i class="icon icon-menu" id="trigger-overlay"></i>
+   <img src="img/wreath.png" class="img-responsive col-xs-1 col-xs-offset-11 logomark" alt="single"/>
     <!--Hero Image-->
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Creating a Better Web</h1>
-            <h4>one pixel at a time</h4>
+    <div class="hero parent">
+        <div class="hero-text child">
+            <h1>Code & Design</h1>
+            <h4>Handcrafted in the Midwest since 1989</h4>
             <button class="white">view work</button>
         </div>
     </div>
@@ -75,34 +50,42 @@
         <!--Featured Work-->
         <section class="featured-work">
             <h2 class="center">Featured Work</h2>
-            <div class="col-sm-6 project cnn">
+            <a href="index.html">
+                <div class="col-sm-6 project cnn">
                 <div class="center project-title">
                     <h3 class="project-name">CNN</h3>
                     <p>View Project</p>
                     <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
                 </div>
-            </div>
-            <div class="col-sm-6 project lost-paradise">
-                <div class="center project-title">
-                    <h3 class="project-name">Lost Paradise</h3>
-                    <p>View Project</p>
-                    <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
                 </div>
-            </div>
-            <div class="col-sm-6 project poster">
-                <div class="center project-title">
-                    <h3 class="project-name">Posters</h3>
-                    <p>View Project</p>
-                    <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+            </a>
+            <a href="#">
+                <div class="col-sm-6 project lost-paradise">
+                    <div class="center project-title">
+                        <h3 class="project-name">Lost Paradise</h3>
+                        <p>View Project</p>
+                        <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6 project wanderlust">
-                <div class="center project-title">
-                    <h3 class="project-name">Wanderlust</h3>
-                    <p>View Project</p>
-                    <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+            </a>
+            <a href="#">
+                <div class="col-sm-6 project poster">
+                    <div class="center project-title">
+                        <h3 class="project-name">Posters</h3>
+                        <p>View Project</p>
+                        <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+                    </div>
                 </div>
-            </div>
+            </a>
+            <a href="#">
+                <div class="col-sm-6 project wanderlust">
+                    <div class="center project-title">
+                        <h3 class="project-name">Wanderlust</h3>
+                        <p>View Project</p>
+                        <img src="img/wreath.png" class="img-responsive wordmark" alt="single"/>
+                    </div>
+                </div>
+            </a>
         </section>
     </div> <!--end container-->
         <!--Pro Bono-->
@@ -116,8 +99,8 @@
                 </div>
             </div>
         </section>
-       <section class="section dribbble col-sm-12"">
-           <div class="container"> <!--inner-container-->
+       <section class="section dribbble col-sm-12 parent">
+           <div class="container child"> <!--inner-container-->
                <div class="text-center col-sm-8 col-sm-offset-2">
                    <h2 style="color: white">Operation Dribbble <span><i class="icon icon-dribbble"></i></span></h2>
                    <h4 class="subhead">Get me on Dribble!</h4>
@@ -127,7 +110,28 @@
            </div>
        </section>
 
+   <!--Menu Overlay-->
+   <div class="overlay overlay-slidedown">
+       <button type="button" class="overlay-close">Close</button>
+       <nav>
+           <ul>
+               <img src="img/logo.png" class="logo" alt="logo"/>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Work</a></li>
+               <li><a href="#">Resume</a></li>
+               <li><a href="#">Archives</a></li>
+               <li><a href="#">Contact</a></li>
+                <span class="social">
+                    <a href="http://www.facebook.com/midwesternoriginals" target="_blank" class="icon icon-facebook"></a>
+                    <a href="http://www.twitter.com/alexbensonphoto" target="_blank" class="icon icon-twitter-bird"></a>
+                    <a href="https://www.behance.net/alexbenson07" target="_blank" class="icon icon-behance"></a>
+                </span>
+           </ul>
+       </nav>
+   </div
 
 
+   <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="js/scripts.js"></script>
 </body>
 </html>
