@@ -268,12 +268,15 @@ span {
     text-align: center;
     margin-top: 25%;
     h1 {
+      font-size: 48px;
       text-transform: uppercase;
-      font-weight: 100;
+      font-weight: 600;
       letter-spacing: .1em;
     }
     h4 {
-      text-transform: lowercase;
+      letter-spacing: .2em;
+      font-weight: 600;
+      text-transform: uppercase;
       font-family: 'Josefin Slab';
     }
   }
@@ -281,15 +284,18 @@ span {
 
 .services {
 
-  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-around;
 
   .icon {
-    @include wh(50px);
-    @include bc(grey);
+    @include wh(100px);
+    text-align: center;
+
+    .icon {
+      font-size: 32px;
+    }
 
 
 

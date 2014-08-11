@@ -14,13 +14,14 @@
     <meta name="robots" content="All" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <!--Raleway-->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
     <!--Josefin Slab-->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/bootstrap.min.js.js"></script>
 </head>
 <body>
     <!--Navbar-->
@@ -29,7 +30,7 @@
     <!--Hero Image-->
     <div class="hero parent">
         <div class="hero-text child">
-            <h1>Code & Design</h1>
+            <h1>Code + Design</h1>
             <h4>Handcrafted in the Midwest since 1989</h4>
             <button class="white">view work</button>
         </div>
@@ -39,12 +40,30 @@
     <div class="container">
         <!--First Section-->
         <section class="services">
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
+            <div class="icon">
+                <i class="icon icon-facebook"></i>
+                <p>Print Design</p>
+            </div>
+            <div class="icon">
+                <i class="icon icon-facebook"></i>
+                <p>Branding</p>
+            </div>
+            <div class="icon">
+                <i class="icon icon-facebook"></i>
+                <p>Web Design</p>
+            </div>
+            <div class="icon">
+                <i class="icon icon-facebook"></i>
+                <p>RWD</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-code fa-lg"></i>
+                <p>Front-End</p>
+            </div>
+            <div class="icon">
+                <i class="icon icon-facebook"></i>
+                <p>Mobile</p>
+            </div>
         </section>
     </div>
 
@@ -119,7 +138,7 @@
                 <h2 style="color: white">Operation Dribbble <span><i class="icon icon-dribbble"></i></span></h2>
                 <h4 class="subhead">Get me on Dribble!</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, eaque harum hic incidunt laboriosam nihil nisi nobis officiis pariatur perspiciatis quas quod similique sunt tempore?</p>
-                <button class="dribbble">Submit Your Project Today</button>
+                <button class="dribbble" data-toggle="modal" data-target="#myModal">Help a Brother Out</button>
             </div>
         </div>
     </section>
@@ -142,7 +161,26 @@
                     </span>
             </ul>
         </nav>
-    </div
+    </div>
+
+    <!--Dribbble Modal-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>

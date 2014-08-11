@@ -1010,23 +1010,27 @@ span.highlight {
   text-align: center;
   margin-top: 25%; }
   .hero .hero-text h1 {
+    font-size: 48px;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 600;
     letter-spacing: .1em; }
   .hero .hero-text h4 {
-    text-transform: lowercase;
+    letter-spacing: .2em;
+    font-weight: 600;
+    text-transform: uppercase;
     font-family: 'Josefin Slab'; }
 
 .services {
-  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-around; }
   .services .icon {
-    width: 50px;
-    height: 50px;
-    background-color: grey; }
+    width: 100px;
+    height: 100px;
+    text-align: center; }
+    .services .icon .icon {
+      font-size: 32px; }
 
 .subhead {
   font-family: 'Josefin Slab'; }
