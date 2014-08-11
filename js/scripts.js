@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     var parentHeight = $('.parent').height();
     var childHeight = $('.child').height();
-    $('#child').css('margin-top', (parentHeight - childHeight) / 2);
+    $('.child').css('margin-top', (parentHeight - childHeight) / 2);
 });
 
 
