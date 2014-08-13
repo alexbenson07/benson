@@ -791,7 +791,7 @@ button {
   -o-background-size: cover;
   background-size: cover; }
 .project.lost-paradise, .hero.lost-paradise {
-  background: url("../img/lost-paradise.png") no-repeat center center;
+  background: url("../img/covers/covers_lost-paradise.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1098,6 +1098,8 @@ button {
     button.button:focus {
       border: none; }
 
-.project-page.container * {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+.project-page.container {
+  text-align: center; }
+  .project-page.container * {
+    margin-top: 20px;
+    margin-bottom: 20px; }
