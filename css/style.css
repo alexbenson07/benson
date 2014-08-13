@@ -797,7 +797,7 @@ button {
   -o-background-size: cover;
   background-size: cover; }
 .project.wanderlust, .hero.wanderlust {
-  background: url("../img/wanderlust-cover.png") no-repeat center center;
+  background: url("../img/covers/covers_wanderlust.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
