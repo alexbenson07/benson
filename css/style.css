@@ -1097,3 +1097,7 @@ button {
       box-shadow: rgba(231, 76, 60, 0); }
     button.button:focus {
       border: none; }
+
+.project-page.container * {
+  margin-top: 20px;
+  margin-bottom: 20px; }

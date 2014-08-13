@@ -172,6 +172,8 @@ h2 {
   height: 250px;
   border: 5px white solid;
 
+
+
 //  &.large {
 //    @include maintain-ratio(16 9);
 //  }
@@ -390,5 +392,13 @@ button {
     &:focus {
       border: none;
     }
+  }
+}
+
+
+.project-page.container {
+  *{
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

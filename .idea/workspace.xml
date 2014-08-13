@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5872fe70-8d29-4a97-9638-6174412d3233" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/project-example.html" afterPath="$PROJECT_DIR$/wanderlust.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/scss/_images.scss" afterPath="$PROJECT_DIR$/css/scss/_images.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/i-design-because.html" afterPath="$PROJECT_DIR$/i-design-because.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/wanderlust/wanderlust_LOGOMARK.tif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wanderlust.html" afterPath="$PROJECT_DIR$/wanderlust.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="midwesternoriginals.iws" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="wanderlust.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wanderlust.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39834026" vertical-offset="327" max-vertical-offset="1110">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6473029" vertical-offset="372" max-vertical-offset="1365">
+              <caret line="56" column="95" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -66,8 +66,8 @@
       <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-140.75" vertical-offset="897" max-vertical-offset="5985">
-              <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.44" vertical-offset="5438" max-vertical-offset="6150">
+              <caret line="404" column="0" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,10 +126,10 @@
         <option value="$PROJECT_DIR$/foundation-install/index.html" />
         <option value="$PROJECT_DIR$/foundation-install/scss/style.scss" />
         <option value="$PROJECT_DIR$/project-example.html" />
-        <option value="$PROJECT_DIR$/css/style.scss" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/scss/_images.scss" />
+        <option value="$PROJECT_DIR$/css/style.scss" />
         <option value="$PROJECT_DIR$/wanderlust.html" />
       </list>
     </option>
@@ -530,14 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-140.75" vertical-offset="897" max-vertical-offset="5985">
-          <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/scss/_images.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="525">
@@ -546,10 +538,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.44" vertical-offset="5438" max-vertical-offset="6150">
+          <caret line="404" column="0" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wanderlust.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39834026" vertical-offset="327" max-vertical-offset="1110">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.6473029" vertical-offset="372" max-vertical-offset="1365">
+          <caret line="56" column="95" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
           <folding />
         </state>
       </provider>
