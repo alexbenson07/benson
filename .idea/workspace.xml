@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5872fe70-8d29-4a97-9638-6174412d3233" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lostparadise.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/lost paradise/big-bag.tif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/lost paradise/can.tif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/lost paradise/italian-can.tif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/lost paradise/large-bag.tif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/lost paradise/white-version.tif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/projects/lost paradise/yukon-large-bag 2.tif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/scss/_images.scss" afterPath="$PROJECT_DIR$/css/scss/_images.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wanderlust.html" afterPath="$PROJECT_DIR$/wanderlust.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lostparadise.html" afterPath="$PROJECT_DIR$/lostparadise.html" />
     </list>
     <ignored path="midwesternoriginals.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +28,7 @@
       <file leaf-file-name="wanderlust.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wanderlust.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.375" vertical-offset="477" max-vertical-offset="1380">
+            <state vertical-scroll-proportion="-18.875" vertical-offset="417" max-vertical-offset="1380">
               <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
               <folding />
             </state>
@@ -50,8 +38,8 @@
       <file leaf-file-name="lostparadise.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lostparadise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7261411" vertical-offset="360" max-vertical-offset="1425">
-              <caret line="59" column="303" selection-start-line="59" selection-start-column="303" selection-end-line="59" selection-end-column="303" />
+            <state vertical-scroll-proportion="0.8298755" vertical-offset="345" max-vertical-offset="1470">
+              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -538,18 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0" vertical-offset="1107" max-vertical-offset="2910">
-          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.24" vertical-offset="5423" max-vertical-offset="6165">
@@ -566,9 +542,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="1107" max-vertical-offset="2910">
+          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wanderlust.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.375" vertical-offset="477" max-vertical-offset="1380">
+        <state vertical-scroll-proportion="-18.875" vertical-offset="417" max-vertical-offset="1380">
           <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
           <folding />
         </state>
@@ -576,8 +564,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lostparadise.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7261411" vertical-offset="360" max-vertical-offset="1425">
-          <caret line="59" column="303" selection-start-line="59" selection-start-column="303" selection-end-line="59" selection-end-column="303" />
+        <state vertical-scroll-proportion="0.8298755" vertical-offset="345" max-vertical-offset="1470">
+          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="58" />
           <folding />
         </state>
       </provider>
