@@ -803,7 +803,7 @@ button {
   -o-background-size: cover;
   background-size: cover; }
 .project.briefcase, .hero.briefcase {
-  background: url("../img/briefcase.png") no-repeat center center;
+  background: url("../img/covers/covers_briefcase.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
