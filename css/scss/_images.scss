@@ -25,7 +25,8 @@
   }
 
   &.poster {
-    @include cover('../img/poster.png');
+    @include cover('../img/projects/posters/japan-poster.png');
+//    background-position: top;
   }
 
 }

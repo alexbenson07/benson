@@ -815,7 +815,7 @@ button {
   -o-background-size: cover;
   background-size: cover; }
 .project.poster, .hero.poster {
-  background: url("../img/poster.png") no-repeat center center;
+  background: url("../img/projects/posters/japan-poster.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
