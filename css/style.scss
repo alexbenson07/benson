@@ -61,7 +61,7 @@ h2 {
 }
 
 .hero {
-  @include wh(100%, 70vh);
+  @include wh(100%, 90vh);
 //  @include cover('https://sqch7a.bn1.livefilestore.com/y2mQhke0z4fwS4BxUZt4w_OoDdcabx4BYzyuFREy9bR4xTf5NwThEAY90CZZ4cuo58gycqIcuPcjA9ERhA0WFt240pkNZz0eCOgWB4KjNs0AwXadZtbt0KkNhlASknEZdWZ/left.jpg?psid=1');
   @include cover('http://media.giphy.com/media/my69AoP0xnY88/giphy.gif');
   @include cover ('http://media.giphy.com/media/HL3yaaeTJMPdu/giphy.gif');
@@ -70,6 +70,10 @@ h2 {
   top: 0;
   left: 0;
   z-index: -1;
+
+  &.work-page {
+    @include wh(100%, 70vh);
+  }
 
   .logo{
 //    @include wh(500px, 500px);
@@ -286,6 +290,7 @@ span {
 
 .services {
 
+
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
@@ -302,6 +307,7 @@ span {
 
 
   }
+  display: none;
 }
 
 .subhead {
@@ -402,4 +408,14 @@ button {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+}
+
+
+#work {
+  padding-top: 40px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
 }
