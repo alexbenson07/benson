@@ -1,6 +1,6 @@
 midwesternoriginals
 ===================
 
-moapp01
-webroot
-git pull
+'mwo
+'webroot
+'git pull
