@@ -499,6 +499,20 @@ footer.full-width .love-reverie {
   margin-top: 2rem;
 }
 
+#hero-container {
+  position: relative;
+}
+
+#hero-container #hero-title {
+  position: absolute;
+  top: 36%;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  width: 100%;
+}
+
 @media only screen {
   .entry-author .avatar {
     margin-bottom: 1.25rem;
