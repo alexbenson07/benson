@@ -20,7 +20,7 @@ get_header(); ?>
 						<source src="wp-content/themes/reverie-master/vid/calmthestorm.mp4" >
 						<p>Your Browser is outdated <a href="http://outdatedbrowser.com/" id="video_not_supported">Improve your browsing experience</a>.</p>
 					</video>
-					<h1 id="hero-title">Bold Title</h1>
+					<h1 id="hero-title">Play</h1>
 				</section>
 				<?php the_content(); ?>
 			</div>
