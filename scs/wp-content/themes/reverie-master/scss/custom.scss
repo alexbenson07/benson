@@ -1,0 +1,29 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 100;
+
+  .nav-item {
+    text-align: center;
+    line-height: 80px;
+
+    .logo-img {
+      height: 80px;
+    }
+  }
+
+  &.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    transition: 0.3s ease;
+  }
+
+  transition: 0.3s ease;
+}
+
+.content-area {
+  margin-top: 80px;
+}
