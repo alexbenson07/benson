@@ -10,5 +10,20 @@ $(document).foundation().ready(function() {
             winWidth = win.width,
             hero.width = win.width,
             hero.height = (win.width * 9) / 16;
-    }())
+    }());
+    (function build_nav(){
+      console.log('building nav');
+      var nav = $('.navbar'),
+          content = $('.content-area');
+
+      content.on('scroll', function(e) {
+        var $this = $(this);
+
+        if ($this.offset().top) {
+          nav.addClass('scrolled');
+        } else {
+          nav.removeClass('scrolled');
+        }
+      });
+    }());
 });
