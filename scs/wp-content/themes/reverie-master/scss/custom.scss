@@ -11,6 +11,7 @@
     text-align: center;
     line-height: 80px;
     color: white;
+    cursor: pointer;
 
     transition: 0.3s ease;
     .logo-img {
@@ -72,6 +73,40 @@
         left: 0;
         right: 0;
         bottom: 0;
+      }
+      .video-wrapper {
+        position: absolute;
+        top: 180px;
+        left: 20%;
+        transform: translateY(-2000px);
+
+        &.show {
+          transform: translateY(0px);
+
+          transition: 1s ease;
+        }
+
+        .close {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          border-radius: 50%;
+          height: 25px;
+          width: 25px;
+          background-color: #2194ab;
+          transform: rotate(45deg);
+          color: white;
+          text-align: center;
+          line-height: 22px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+
+        &::after {
+
+        }
+
+        transition: 1s ease;
       }
     }
     &.second {
