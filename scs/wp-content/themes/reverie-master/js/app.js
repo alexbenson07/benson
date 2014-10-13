@@ -26,4 +26,10 @@ $(document).foundation().ready(function() {
         }
       });
     }());
+
+    (function build_first_section(){
+      var first = $('.section.first');
+
+      first.children('.left').css('margin-top', $(window).height());
+    }());
 });
