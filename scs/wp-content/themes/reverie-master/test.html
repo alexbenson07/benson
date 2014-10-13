@@ -21,7 +21,13 @@
         <div class="left">
           <h2 class="header">Memories That Last</h2>
           <p class="subheader">Story Corner Studios is a production studio based in Kansas CIty, Missouri. We specialize in capturing personal stories through interview-based video production.</p>
-          <button class="button ghost">Watch Video</button>
+          <button class="button ghost watch">Watch Video</button>
+        </div>
+        <div class="video-wrapper">
+          <video autobuffer controls id="video">
+            <source src="vid/calmthestorm.mp4" type="video/mp4"></source>
+          </video>
+          <span class="close">+</span>
         </div>
       </header>
 
@@ -195,11 +201,11 @@
       <h2 class="header contact">Contact</h2>
       <h3 class="subheader">Email</h3>
       <p class="email">
-        jcstartup@gmail.com
+        <a href="mailto:jcstartup@gmail.com">jcstartup@gmail.com</a>
       </p>
       <h3 class="subheader">Phone</h3>
       <p class="phone">
-        816.222.4444
+        <a href="tel:8162224444">816.222.4444</a>
       </p>
       <h3 class="subheader">Social</h3>
       <ul class="social-list small-block-grid-4">
@@ -228,20 +234,51 @@
            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
          }
 
-        // (function build_nav(){
-          // console.log('building nav');
-          // var nav     = $('.navbar');
+        (function build_nav(){
+          var nav     = $('.navbar');
 
-          // $(document).on('scroll', function(e) {
-          //   var $this = $(this);
-          //
-          //   if ($this.scrollTop() > 50) {
-          //     nav.addClass('scrolled');
-          //   } else {
-          //     nav.removeClass('scrolled');
-          //   }
-          // });
-        // }());
+          $('.nav-item.logo').on('click', function(e) {
+            // console.log('test');
+
+            e.preventDefault();
+
+            $('html, body').animate({
+              scrollTop: 0
+            }, 'ease');
+          });
+
+          $('.nav-item.contact').on('click', function(e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+              scrollTop: $(document).height()
+            }, 'ease');
+          });
+
+          $('.nav-item.pricing').on('click', function(e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+              scrollTop: $('.pricing-wrapper').offset().top - 180
+            }, 'ease');
+          });
+
+          $('.nav-item.mission').on('click', function(e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+              scrollTop: $('.section.second').offset().top - 180
+            }, 'ease');
+          });
+
+          $('.nav-item.careers').on('click', function(e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+              scrollTop: $('.four-point-wrapper').offset().top - 180
+            }, 'ease');
+          });
+        }());
 
         (function build_first_section(){
           var first = $('.section.first');
@@ -256,6 +293,65 @@
             }
           }
         });
+
+
+        (function build_video() {
+            var hero = $('#video'),
+                video = document.getElementById('video'),
+                heroRatio = '16:9',
+                win = $(window),
+                winWidth = win.width(),
+                wrapper = $('.video-wrapper');
+
+                // function playPause() {
+                //   if (video.paused == false) {
+                //       video.pause();
+                //       this.firstChild.nodeValue = 'Play';
+                //       // pauseCount();
+                //   } else {
+                //       video.play();
+                //       this.firstChild.nodeValue = 'Pause';
+                //       // startCount();
+                //   }
+                //     }
+                //
+                // hero.on('click', function(e) {
+                //   playPause();
+                // });
+                //
+                // document.getElementById('hero-title').addEventListener('click', playPause);
+
+                hero.width(winWidth * 0.6).height(((winWidth * 9) / 16) * 0.6).css('top', (win.height() / 2) - hero.height() / 2);
+
+                $('.watch').on('click', function(e) {
+                  e.preventDefault();
+
+                  wrapper.addClass('show');
+
+                  video.play();
+                });
+
+                $('.close').on('click', function(e) {
+                  e.preventDefault();
+
+                  wrapper.removeClass('show');
+
+                  video.pause();
+
+                  video.currentTime = 0;
+                });
+
+                $('.first').on('click', function(e) {
+                  // console.log(e.target);
+                  if (wrapper.hasClass('show') && !($(e.target).hasClass('watch'))) {
+                    wrapper.removeClass('show');
+
+                    video.pause();
+
+                    video.currentTime = 0;
+                  }
+                })
+        }());
       });
     </script>
   </body>
