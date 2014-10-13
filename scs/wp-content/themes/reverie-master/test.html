@@ -6,83 +6,92 @@
     <link rel="stylesheet" href="css/app.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" data-start="background-color: rgba(255, 255, 255, 0);" data-80="background-color: rgba(255, 255, 255, 0.9)">
       <ul class="small-block-grid-5">
-        <li class="nav-item mission">Mission</li>
-        <li class="nav-item careers">Careers</li>
+        <li class="nav-item mission" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Mission</li>
+        <li class="nav-item careers" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Careers</li>
         <li class="nav-item logo"><img class="logo-img" src="img/scs.png" alt="Story Corner Studios" /></li>
-        <li class="nav-item pricing">Pricing</li>
-        <li class="nav-item contact">Contact</li>
+        <li class="nav-item pricing" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Pricing</li>
+        <li class="nav-item contact" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Contact</li>
       </ul>
     </nav>
 
     <div class="content-area">
-      <header class="full-page section first">
+      <header class="full-page section first" >
         <div class="left">
           <h2 class="header">Memories That Last</h2>
           <p class="subheader">Story Corner Studios is a production studio based in Kansas CIty, Missouri. We specialize in capturing personal stories through interview-based video production.</p>
+          <button class="button ghost">Watch Video</button>
         </div>
       </header>
 
       <section class="section second">
         <h2 class="header">Pillars of Practice</h2>
-        <ul class="small-block-grid-3">
-          <li>
-            <h3>Preservation</h3>
-            <p>Our mission is to make memories last forever.</p>
+        <ul class="small-block-grid-3 pillars">
+          <li class="pillars-item preservation" data-bottom-top="transform: translate(-100px, 100px); opacity: 0;" data-bottom-bottom="transform: translate(0px, 0px); opacity: 1">
+            <div class="circle hidden"></div>
+            <h3 class="header">Preservation</h3>
+            <p class="desc">Our mission is to make memories last forever.</p>
           </li>
-          <li>
-            <h3>Presentation</h3>
-            <p>We will always make professional work.</p>
+          <li class="pillars-item presentation" data-bottom-top="transform: translateY(100px); opacity: 0" data-bottom-bottom="transform: translateY(0px); opacity: 1">
+            <div class="circle hidden"></div>
+            <h3 class="header">Presentation</h3>
+            <p class="desc">We will always make professional work.</p>
           </li>
-          <li>
-            <h3>Education</h3>
-            <p>We mentor and build up our student associates through training and employment.</p>
+          <li class="pillars-item education" data-bottom-top="transform: translate(100px, 100px); opacity: 0" data-bottom-bottom="transform: translate(0px, 0px); opacity: 1">
+            <div class="circle hidden"></div>
+            <h3 class="header">Education</h3>
+            <p class="desc">We mentor and build up our student associates through training and employment.</p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <div>
-          <h2>Headline</h2>
-          <p>
-            Lorem ipsum dolor sit amet, in vitae gravida ac iaculis. Porttitor vitae pellentesque elementum eu magna, cupidatat nec pellentesque vestibulum sed vitae. Nam natoque, sit tincidunt cras ut, nullam mauris felis suspendisse tellus per mauris, id in diam turpis arcu in. Dictum phasellus ut lorem litora adipiscing mauris, blandit ut, eleifend rutrum nec, vitae arcu elit dictum ut. Sociosqu venenatis maecenas vel integer in natoque, massa diam, hac tellus nec consequat arcu curabitur in. Pede interdum ipsum neque in nullam, dolore metus vestibulum. Fusce wisi nec ultricies urna, id odio neque, est elementum nulla luctus ac, mattis felis sit occaecati gravida aliquam massa, tempus elit dui neque duis potenti velit.
+      <section class="section third clearfix">
+        <div class="left">
+          <h2 class="header">Headline</h2>
+          <p class="subheader">
+            Lorem ipsum dolor sit amet, in vitae gravida ac iaculis. Porttitor vitae pellentesque elementum eu magna, cupidatat nec pellentesque vestibulum sed vitae. Nam natoque, sit tincidunt cras ut, nullam mauris felis suspendisse tellus per mauris, id in diam turpis arcu in.
           </p>
-          <button>Call to Action</button>
+          <button class="button ghost">Call to Action</button>
+        </div>
+        <div class="right hidden">
+          <img src="people.png" alt="People" />
         </div>
       </section>
 
-      <section>
-        <img src="family.png" alt="Family" />
-        <div>
-          <ul class="small-block-grid-4">
-            <li>
+      <section class="section fourth">
+        <div class="picture-wrapper">
+          <img class="picture" src="img/boat.jpg" alt="Family" />
+        </div>
+        <div class="four-point-wrapper">
+          <ul class="four-point small-block-grid-4">
+            <li class="point-item">
               <div>
-                <span class="plus"></span>
+                <span class="circle first">1</span>
                 <p>
                   Every person is unique. We tailor our interviews to each individual to best capture their personal Story.
                 </p>
               </div>
             </li>
-            <li>
+            <li class="point-item">
               <div>
-                <span class="plus"></span>
+                <span class="circle second">2</span>
                 <p>
                   Our innovative buisness model allows us to  offer professional quality services at family friendly prices.
                 </p>
               </div>
             </li>
-            <li>
+            <li class="point-item">
               <div>
-                <span class="plus"></span>
+                <span class="circle third">3</span>
                 <p>
                   We deliver a professional quality video in a two-week turnaround.
                 </p>
               </div>
             </li>
-            <li>
+            <li class="point-item">
               <div>
-                <span class="plus"></span>
+                <span class="circle fourth">4</span>
                 <p>
                   We bring a youthful and fun experience in every interview we conduct.
                 </p>
@@ -90,116 +99,163 @@
             </li>
           </ul>
         </div>
-        <h2>Testimonials</h2>
-        <ul class="small-block-grid-3">
-          <li>
-            <img src="img/test1.png" alt="Terri" />
-            <p>
-              I wish we would've done this sooner! <br /> - Terri Blake
-            </p>
-          </li>
-          <li>
-            <img src="img/test2.png" alt="Cori" />
-            <p>
-              This is the greatest gift a family can recieve. <br /> - Cori Watkins
-            </p>
-          </li>
-          <li>
-            <img src="img/test3.png" alt="Rick" />
-            <p>
-              My family will cherish this forever. <br /> - Rick Bickford
-            </p>
-          </li>
-        </ul>
+        <h2 class="header testimonials">Testimonials</h2>
+        <div class="testimonials-grid-wrapper">
+          <ul class="small-block-grid-3 testimonial-grid">
+            <li class="testimonial-item clearfix">
+              <img src="img/test1.png" alt="Terri" class="picture left"/>
+              <p class="testimonial right">
+                I wish we would've done this sooner! <br /> - Terri Blake
+              </p>
+            </li>
+            <li class="testimonial-item clearfix">
+              <img src="img/test2.png" alt="Cori" class="picture left"/>
+              <p class="testimonial right">
+                This is the greatest gift a family can recieve. <br /> - Cori Watkins
+              </p>
+            </li>
+            <li class="testimonial-item clearfix">
+              <img src="img/test3.png" alt="Rick" class="picture left"/>
+              <p class="testimonial right">
+                My family will cherish this forever. <br /> - Rick Bickford
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="pricing-wrapper hidden">
+          <ul class="small-block-grid-3 pricing">
+            <li class="price-point">
+              <div class="inner-price">
+                <p class="price">$500</p>
+                <ul class="desc-list">
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                </ul>
+                <button class="button purchase">Purchase</button>
+              </div>
+            </li>
+            <li class="price-point">
+              <div class="inner-price">
+                <p class="price">$500</p>
+                <ul class="desc-list">
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                </ul>
+                <button class="button purchase">Purchase</button>
+              </div>
+            </li>
+            <li class="price-point">
+              <div class="inner-price">
+                <p class="price">$500</p>
+                <ul class="desc-list">
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                  <li class="desc">Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
+                </ul>
+                <button class="button purchase">Purchase</button>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-        <ul class="small-block-grid-3">
-          <li>
-            <p>$500</p>
-            <ul>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-            </ul>
-            <button>Purchase</button>
-          </li>
-          <li>
-            <p>$500</p>
-            <ul>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-            </ul>
-            <button>Purchase</button>
-          </li>
-          <li>
-            <p>$500</p>
-            <ul>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-              <li>Massa at sodales, morbi mattis lectus, etiam nec nec arcu dictum vestibulum morbi, praesent suscipit.</li>
-            </ul>
-            <button>Purchase</button>
-          </li>
-        </ul>
-
-        <div>
-          <div class="left">
-            <h3>Cities we cover</h3>
-            <p>
+        <div class="cities-wrapper">
+          <div class="cities">
+            <h3 class="header">Cities we cover</h3>
+            <p class="cities-list">
               Kansas City
-              <br />
+              <span class="pipe">|</span>
               Olathe, KS
-              <br />
+              <span class="pipe">|</span>
               Topeka, KS
-              <br />
+              <span class="pipe">|</span>
               Lawrence, KS
-              <br />
+              <span class="pipe">|</span>
               Wichita, KS *
-              <br />
+              <span class="pipe">|</span>
               Colombia, MO *
-              <br />
+              <span class="pipe">|</span>
               Manhattan, KS *
               <br />
-              <br />
+            </p>
+            <p class="cost">
               *Travel cost not included
             </p>
           </div>
 
-          <div class="right">
-            <img src="img/locations.png" alt="Our Locations" />
+          <div class="cities-img">
+            <img class="img" src="img/locations.png" alt="Our Locations" />
           </div>
         </div>
       </section>
     </div>
 
-    <footer>
-
+    <footer class="section footer">
+      <h2 class="header contact">Contact</h2>
+      <h3 class="subheader">Email</h3>
+      <p class="email">
+        jcstartup@gmail.com
+      </p>
+      <h3 class="subheader">Phone</h3>
+      <p class="phone">
+        816.222.4444
+      </p>
+      <h3 class="subheader">Social</h3>
+      <ul class="social-list small-block-grid-4">
+        <li class="social-item"></li>
+        <li class="social-item"></li>
+        <li class="social-item"></li>
+        <li class="social-item"></li>
+      </ul>
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/skrollr.min.js"></script>
 
     <script type="text/javascript" charset="utf-8">
       $(document).ready(function() {
-        (function build_nav(){
-          console.log('building nav');
-          var nav     = $('.navbar');
+         var s = skrollr.init();
+         var fourPoint = $('.four-point');
 
-          $(document).on('scroll', function(e) {
-            var $this = $(this);
+         function isScrolledIntoView(elem) {
+           var docViewTop = $(window).scrollTop();
+           var docViewBottom = docViewTop + $(window).height();
 
-            if ($this.scrollTop() > 50) {
-              nav.addClass('scrolled');
-            } else {
-              nav.removeClass('scrolled');
-            }
-          });
+           var elemTop = $(elem).offset().top;
+           var elemBottom = elemTop + $(elem).height();
+
+           return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+         }
+
+        // (function build_nav(){
+          // console.log('building nav');
+          // var nav     = $('.navbar');
+
+          // $(document).on('scroll', function(e) {
+          //   var $this = $(this);
+          //
+          //   if ($this.scrollTop() > 50) {
+          //     nav.addClass('scrolled');
+          //   } else {
+          //     nav.removeClass('scrolled');
+          //   }
+          // });
+        // }());
+
+        (function build_first_section(){
+          var first = $('.section.first');
+
+          first.children('.left').css('margin-top', ($(window).height() /2) - (first.children('.left').height() / 2));
         }());
+
+        $(document).on('scroll', function() {
+          if (!fourPoint.hasClass('in-view')) {
+            if (isScrolledIntoView(fourPoint)) {
+              fourPoint.addClass('in-view');
+            }
+          }
+        });
       });
     </script>
   </body>

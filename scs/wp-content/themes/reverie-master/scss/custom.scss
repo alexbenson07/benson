@@ -5,11 +5,14 @@
   right: 0;
   height: 80px;
   z-index: 100;
+  max-width: 100%;
 
   .nav-item {
     text-align: center;
     line-height: 80px;
+    color: white;
 
+    transition: 0.3s ease;
     .logo-img {
       height: 80px;
     }
@@ -18,6 +21,12 @@
   &.scrolled {
     background-color: rgba(255, 255, 255, 0.9);
 
+    .nav-item {
+      color: #2194ab;
+
+      transition: 0.3s ease;
+    }
+
     transition: 0.3s ease;
   }
 
@@ -25,5 +34,437 @@
 }
 
 .content-area {
-  margin-top: 80px;
+  // margin-top: 80px;
+  position: relative;
+
+  .section {
+    &.first {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      background: url('../img/person.jpeg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      .left {
+        margin-top: 180px;
+        margin-left: 10%;
+        position: absolute;
+
+        .header, .subheader {
+          color: white;
+        }
+
+        .subheader {
+          max-width: 550px;
+        }
+        // height: 100%;
+      }
+
+      &::before {
+        content: '';
+        background-color: #2194ab;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    &.second {
+      .header {
+        text-align: center;
+        color: #2194ab;
+        margin: 25px 0;
+        margin-top: 50px;
+      }
+      .pillars {
+        margin: 0 10%;
+        .pillars-item {
+          height: 350px;
+          text-align: center;
+
+          .circle {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background-color: #7b7b7b;
+            margin: 0 auto;
+          }
+
+          .header {
+            color: #2194ab;
+          }
+
+          .desc {
+            padding: 0 50px;
+          }
+        }
+      }
+    }
+    &.third {
+      background: linear-gradient(to right, #4dc5ec, #1b7688);
+      padding: 25px 0;
+
+      .left {
+        margin-left: 10%;
+
+        .header, .subheader, .button {
+          color: white;
+        }
+
+        .button.ghost {
+          &:hover {
+            color: #4dc5ec;
+          }
+        }
+
+        .subheader {
+          max-width: 550px;
+        }
+      }
+
+      .right {
+
+      }
+    }
+    &.fourth {
+      .picture-wrapper {
+        max-height: 350px;
+        overflow: hidden;
+        position: relative;
+        .picture {
+          width: 100%;
+          height: auto;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(to bottom, rgba(247, 247, 247, 0), rgba(247, 247, 247, 1));
+          padding: 25px 0;
+        }
+      }
+      .four-point {
+        margin: 0 10%;
+        position: relative;
+
+        .point-item {
+          text-align: center;
+          position: relative;
+
+          .circle {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            border: 2px solid #4dc5ec;
+            border-width: 2px;
+            border-color: white;
+            display: block;
+            margin: 25px auto;
+            background-color: white;
+            position: relative;
+            line-height: 100px;
+            color: white;
+            font-size: 36px;
+
+            transition: 1s ease;
+          }
+        }
+
+        &::before {
+          content: '';
+          height: 2px;
+          width: 0%;
+          position: absolute;
+          left: 10%;
+          background-color: #4dc5ec;
+          top: 75px;
+
+          transition: 4s ease;
+        }
+
+        &.in-view {
+          &::before {
+            -webkit-animation: lineWidth 1s;
+            -moz-animation: lineWidth 1s;
+            -o-animation: lineWidth 1s;
+            animation: lineWidth 1s;
+
+            width: 80%;
+
+            transition: 4s ease;
+          }
+          .point-item .circle {
+            // border-width: 2px;
+          }
+          .point-item .circle.first {
+            -webkit-animation: borderRad 1s;
+            -moz-animation: borderRad 1s;
+            -o-animation: borderRad 1s;
+            animation: borderRad 1s;
+
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            -o-animation-delay: 0s;
+            animation-delay: 0s;
+
+            // -webkit-animation-timing-function: ease-in-out;
+            // -moz-animation-timing-function: ease-in-out;
+            // -o-animation-timing-function: ease-in-out;
+            // animation-timing-function: ease-in-out;
+
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+          }
+          .point-item .circle.second {
+            -webkit-animation: borderRad 1s;
+            -moz-animation: borderRad 1s;
+            -o-animation: borderRad 1s;
+            animation: borderRad 1s;
+
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            -o-animation-delay: 1s;
+            animation-delay: 1s;
+
+            // -webkit-animation-timing-function: ease-in-out;
+            // -moz-animation-timing-function: ease-in-out;
+            // -o-animation-timing-function: ease-in-out;
+            // animation-timing-function: ease-in-out;
+
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+          }
+          .point-item .circle.third {
+            -webkit-animation: borderRad 1s;
+            -moz-animation: borderRad 1s;
+            -o-animation: borderRad 1s;
+            animation: borderRad 1s;
+
+            -webkit-animation-delay: 2s;
+            -moz-animation-delay: 2s;
+            -o-animation-delay: 2s;
+            animation-delay: 2s;
+
+            // -webkit-animation-timing-function: ease-in-out;
+            // -moz-animation-timing-function: ease-in-out;
+            // -o-animation-timing-function: ease-in-out;
+            // animation-timing-function: ease-in-out;
+
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+          }
+          .point-item .circle.fourth {
+            -webkit-animation: borderRad 1s;
+            -moz-animation: borderRad 1s;
+            -o-animation: borderRad 1s;
+            animation: borderRad 1s;
+
+            -webkit-animation-delay: 3s;
+            -moz-animation-delay: 3s;
+            -o-animation-delay: 3s;
+            animation-delay: 3s;
+
+            // -webkit-animation-timing-function: ease-in-out;
+            // -moz-animation-timing-function: ease-in-out;
+            // -o-animation-timing-function: ease-in-out;
+            // animation-timing-function: ease-in-out;
+
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+      .header.testimonials {
+        color: #1b7688;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .testimonials-grid-wrapper {
+        margin-bottom: 25px;
+        padding: 0 5%;
+        .testimonial-item {
+          .picture {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+          }
+          .testimonial {
+            width: 70%;
+          }
+        }
+      }
+      .pricing-wrapper {
+        padding: 0 5%;
+        margin: 25px 0;
+        .pricing {
+          .price-point {
+            padding: 0 10px;
+            height: 450px;
+            .inner-price {
+              position: relative;
+              border: 1px solid #333333;
+              padding: 15px;
+              height: 450px;
+              .price {
+                font-size: 36px;
+                text-align: center;
+                color: #1b7688;
+              }
+              .desc-list {
+                .desc {
+
+                }
+              }
+              .purchase {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+      .cities-wrapper {
+        margin: 50px 0;
+        text-align: center;
+        color: #1b7688;
+        .header {
+          color: #1b7688;
+        }
+        .cities-list {
+          max-width: 60%;
+          margin: 0 auto;
+        }
+        .cities-img {
+          .img {
+            max-width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  text-align: center;
+  margin: 50px 0;
+  .header, .subheader {
+    color: #1b7688;
+  }
+}
+
+.button.ghost {
+  background-color: transparent;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: white;
+    color: #4dc5ec;
+
+    transition: 0.3s ease;
+  }
+
+  transition: 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+@-webkit-keyframes lineWIdth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-moz-keyframes lineWIdth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-o-keyframes lineWIdth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes lineWIdth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes borderRad {
+  from {
+    color: white;
+    border-color: white;
+  }
+  to {
+    color: #4dc5ec;
+    border-color: #4dc5ec;
+  }
+}
+
+@-moz-keyframes borderRad {
+  from {
+    color: white;
+    border-color: white;
+  }
+  to {
+    color: #4dc5ec;
+    border-color: #4dc5ec;
+  }
+}
+
+@-o-keyframes borderRad {
+  from {
+    color: white;
+    border-color: white;
+  }
+  to {
+    color: #4dc5ec;
+    border-color: #4dc5ec;
+  }
+}
+
+@keyframes borderRad {
+  from {
+    color: white;
+    border-color: white;
+  }
+  to {
+    color: #4dc5ec;
+    border-color: #4dc5ec;
+  }
 }
