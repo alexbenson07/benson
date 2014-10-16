@@ -6,7 +6,7 @@ get_header(); ?>
 
 
 <!-- Start the main container -->
-<div role="document" class="content-area">
+<div id="off-skrollr-body" role="document" class="content-area">
 
 	<header class="full-page section first" >
 		<div class="left">
@@ -21,7 +21,10 @@ get_header(); ?>
 			<video autobuffer controls id="video">
 				<source src="<?php echo get_template_directory_uri(); ?>/vid/calmthestorm.mp4" type="video/mp4"></source>
 			</video>
-			<span class="close">+</span>
+			<span class="close icon-cancel icon"></span>
+		</div>
+		<div class="down-wrapper">
+			<span class="down icon icon-down-open"></span>
 		</div>
 	</header>
 
@@ -61,17 +64,17 @@ get_header(); ?>
 						echo apply_filters( 'the_content', $post->post_content );
 			?>
 		</div>
-		<div class="right hidden">
-			<img src="<?php echo get_template_directory_uri(); ?>/people.png" alt="People" />
+		<div class="right show-for-medium-up">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/people.jpg" alt="People" />
 		</div>
 	</section>
 
 	<section class="section fourth">
 		<div class="picture-wrapper">
-			<img class="picture" src="<?php echo get_template_directory_uri(); ?>/img/boat.jpg" alt="Family" />
+			<img class="picture" src="<?php echo get_template_directory_uri(); ?>/img/Family.jpg" alt="Family" />
 		</div>
 		<div class="four-point-wrapper">
-			<ul class="four-point small-block-grid-4">
+			<ul class="four-point small-block-grid-1 medium-block-grid-4">
 				<!-- <li class="point-item">
 					<div>
 						<span class="circle first">1</span>
@@ -112,7 +115,7 @@ get_header(); ?>
 		</div>
 		<h2 class="header testimonials">Testimonials</h2>
 		<div class="testimonials-grid-wrapper">
-			<ul class="small-block-grid-3 testimonial-grid">
+			<ul class="small-block-grid-1 medium-block-grid-3 testimonial-grid">
 				<li class="testimonial-item clearfix">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/test1.png" alt="Terri" class="picture left"/>
 					<!-- <p class="testimonial right">
