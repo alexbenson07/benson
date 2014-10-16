@@ -34,6 +34,7 @@
 	<!-- <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" /> -->
 
 <?php wp_head(); ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/icons.css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" media="screen" title="no title" charset="utf-8">
 </head>
 

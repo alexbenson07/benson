@@ -10,10 +10,10 @@
 	</p>
 	<h3 class="subheader">Social</h3>
 	<ul class="social-list small-block-grid-4">
-		<li class="social-item"></li>
-		<li class="social-item"></li>
-		<li class="social-item"></li>
-		<li class="social-item"></li>
+		<li class="social-item icon-facebook"></li>
+		<li class="social-item icon-twitter"></li>
+		<li class="social-item icon-linkedin"></li>
+		<li class="social-item icon-youtube"></li>
 	</ul>
 </footer>
 
@@ -24,7 +24,7 @@
 
 <script type="text/javascript">
 	(function($) {
-		$(document).foundation();
+		// $(document).foundation();
 
 		var s = skrollr.init();
 		var fourPoint = $('.four-point');
@@ -49,7 +49,7 @@
 
 				$('html, body').animate({
 					scrollTop: 0
-				}, 'ease');
+				}, 500);
 			});
 
 			$('.nav-item.contact').on('click', function(e) {
@@ -57,7 +57,7 @@
 
 				$('html, body').animate({
 					scrollTop: $(document).height()
-				}, 'ease');
+				}, 500);
 			});
 
 			$('.nav-item.pricing').on('click', function(e) {
@@ -65,7 +65,7 @@
 
 				$('html, body').animate({
 					scrollTop: $('.pricing-wrapper').offset().top - 180
-				}, 'ease');
+				}, 500);
 			});
 
 			$('.nav-item.mission').on('click', function(e) {
@@ -73,7 +73,7 @@
 
 				$('html, body').animate({
 					scrollTop: $('.section.second').offset().top - 180
-				}, 'ease');
+				}, 500);
 			});
 
 			$('.nav-item.careers').on('click', function(e) {
@@ -81,7 +81,7 @@
 
 				$('html, body').animate({
 					scrollTop: $('.four-point-wrapper').offset().top - 180
-				}, 'ease');
+				}, 500);
 			});
 		}());
 
@@ -106,7 +106,8 @@
 						heroRatio = '16:9',
 						win = $(window),
 						winWidth = win.width(),
-						wrapper = $('.video-wrapper');
+						wrapper = $('.video-wrapper'),
+						mult = 0.6;
 
 						// function playPause() {
 						//   if (video.paused == false) {
@@ -125,8 +126,12 @@
 						// });
 						//
 						// document.getElementById('hero-title').addEventListener('click', playPause);
+						if (400 > winWidth * mult) {
+							mult = 0.9;
+							wrapper.css('left', '5%');
+						}
 
-						hero.width(winWidth * 0.6).height(((winWidth * 9) / 16) * 0.6).css('top', (win.height() / 2) - hero.height() / 2);
+						hero.width(winWidth * mult).height(((winWidth * 9) / 16) * mult).css('top', (win.height() / 2) - hero.height() / 2);
 
 						$('.watch').on('click', function(e) {
 							e.preventDefault();
@@ -157,6 +162,12 @@
 							}
 						})
 		}());
+
+		$('.down').on('click', function(e) {
+			$('html, body').animate({
+				scrollTop: $('.section.first').height() - 80
+			}, 500);
+		});
 	})(jQuery);
 </script>
 
