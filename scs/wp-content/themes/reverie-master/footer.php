@@ -8,8 +8,8 @@
 	<p class="phone">
 		<a href="tel:8162224444">816.222.4444</a>
 	</p>
-	<h3 class="subheader">Social</h3>
-	<ul class="social-list small-block-grid-4">
+	<h3 class="subheader hidden">Social</h3>
+	<ul class="social-list small-block-grid-4 hidden">
 		<li class="social-item icon-facebook"></li>
 		<li class="social-item icon-twitter"></li>
 		<li class="social-item icon-linkedin"></li>
@@ -64,7 +64,7 @@
 				e.preventDefault();
 
 				$('html, body').animate({
-					scrollTop: $('.pricing-wrapper').offset().top - 180
+					scrollTop: $('.cities-wrapper').offset().top - 180
 				}, 500);
 			});
 
@@ -107,7 +107,7 @@
 						win = $(window),
 						winWidth = win.width(),
 						wrapper = $('.video-wrapper'),
-						mult = 0.6;
+						mult = 0.9;
 
 						// function playPause() {
 						//   if (video.paused == false) {
@@ -131,7 +131,13 @@
 							wrapper.css('left', '5%');
 						}
 
-						hero.width(winWidth * mult).height(((winWidth * 9) / 16) * mult).css('top', (win.height() / 2) - hero.height() / 2);
+					hero.width(winWidth * mult).height(((winWidth * 9) / 16) * mult);
+					wrapper.css('top', (win.height() / 2) - hero.height() / 2);
+
+					if (hero.height() > win.height()) {
+						// console.log(win.height() - hero.height());
+						// wrapper.css('margin-top', '-' + win.height() - hero.height());
+					}
 
 						$('.watch').on('click', function(e) {
 							e.preventDefault();
@@ -160,7 +166,15 @@
 
 								video.currentTime = 0;
 							}
-						})
+						});
+
+						$('#video').on('click', function(e) {
+							if (video.paused) {
+								video.play();
+							} else {
+								video.pause();
+							}
+						});
 		}());
 
 		$('.down').on('click', function(e) {

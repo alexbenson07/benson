@@ -19,7 +19,7 @@ get_header(); ?>
 		</div>
 		<div class="video-wrapper">
 			<video autobuffer controls id="video">
-				<source src="<?php echo get_template_directory_uri(); ?>/vid/calmthestorm.mp4" type="video/mp4"></source>
+				<source src="<?php echo get_template_directory_uri(); ?>/vid/scs-flight-stories.mp4" type="video/mp4"></source>
 			</video>
 			<span class="close icon-cancel icon"></span>
 		</div>
@@ -65,7 +65,7 @@ get_header(); ?>
 			?>
 		</div>
 		<div class="right show-for-medium-up">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/people.jpg" alt="People" />
+			<img class="img" src="<?php echo get_template_directory_uri(); ?>/img/people.png" alt="People" />
 		</div>
 	</section>
 

@@ -16,7 +16,7 @@
   .navbar .nav-item {
     text-align: center;
     line-height: 80px;
-    color: white;
+    color: #2194ab !important;
     cursor: pointer;
     transition: 0.3s ease; }
     @media screen and (max-width: 764px) {
@@ -39,7 +39,7 @@
       height: 100vh;
       width: 100vw;
       position: relative;
-      background: url("../img/person.jpeg") no-repeat center center fixed;
+      background: url("../img/scs-hero-img.jpg") no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -49,13 +49,16 @@
         margin-left: 10%;
         position: absolute; }
         .content-area .section.first .left .header, .content-area .section.first .left .subheader {
-          color: white; }
+          color: #2194ab; }
+        .content-area .section.first .left .button {
+          border-color: #2194ab;
+          color: #2194ab; }
         .content-area .section.first .left .subheader {
           max-width: 550px; }
       .content-area .section.first::before {
         content: '';
         background-color: #2194ab;
-        opacity: 0.4;
+        opacity: 0;
         position: absolute;
         top: 0;
         left: 0;
@@ -64,11 +67,14 @@
       .content-area .section.first .video-wrapper {
         position: absolute;
         top: 180px;
-        left: 20%;
-        transform: translateY(-2000px);
+        left: 5%;
+        opacity: 0;
+        z-index: -1;
         transition: 1s ease; }
         .content-area .section.first .video-wrapper.show {
           transform: translateY(0px);
+          opacity: 1;
+          z-index: 0;
           transition: 1s ease; }
         .content-area .section.first .video-wrapper .close {
           position: absolute;
@@ -90,7 +96,7 @@
         width: 100%;
         left: 0; }
         .content-area .section.first .down-wrapper .down {
-          color: white; }
+          color: #2194ab; }
           .content-area .section.first .down-wrapper .down:hover {
             cursor: pointer; }
     .content-area .section.second .header {
@@ -136,8 +142,8 @@
           color: #4dc5ec; }
         .content-area .section.third .left .subheader {
           max-width: 550px; }
-      .content-area .section.third .right {
-        width: 45%; }
+      .content-area .section.third .right .img {
+        height: 303px; }
     .content-area .section.fourth .picture-wrapper {
       max-height: 450px;
       overflow: hidden;

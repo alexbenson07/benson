@@ -45,7 +45,7 @@
 		<li class="nav-item mission" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Mission</li>
 		<li class="nav-item careers" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Careers</li>
 		<li class="nav-item logo"><img class="logo-img" src="<?php echo get_template_directory_uri(); ?>/img/scs.png" alt="Story Corner Studios" /></li>
-		<li class="nav-item pricing" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Pricing</li>
+		<li class="nav-item pricing" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Locations</li>
 		<li class="nav-item contact" data-start="color: rgb(255, 255, 255)" data-80="color: rgb(33, 148, 171)">Contact</li>
 	</ul>
 </nav>
