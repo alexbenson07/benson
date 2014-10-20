@@ -16,7 +16,6 @@
   z-index: 100;
   max-width: 100%;
   overflow: hidden;
-
   .nav-item {
     text-align: center;
     line-height: 80px;
@@ -128,7 +127,6 @@
           line-height: 25px;
           font-size: 14px;
           cursor: pointer;
-          // padding: 0 10px;
         }
 
         &::after {
@@ -146,7 +144,6 @@
         .down {
           // color: white;
           color: #2194ab;
-
           &:hover {
             cursor: pointer;
           }
