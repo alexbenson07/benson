@@ -12,6 +12,7 @@
   height: 80px;
   z-index: 100;
   max-width: 100%;
+  overflow: hidden;
   transition: 0.3s ease; }
   .navbar .nav-item {
     text-align: center;
